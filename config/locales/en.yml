@@ -1,4 +1,17 @@
 en:
-  hello: "Hello world"
-  application:
-    intro: "Project1"
+  greetings: "Welcome to Course Registration System"
+  p_1: "This is Home Page for Course Registration System"
+  home: "Home"
+  help: "Help"
+  help_p1: "Frequently ask question"
+  help_p2: "Coming Soon ..."
+  log_in: "Log in"
+  l_title: "Course Registration System"
+  h_title: "COURSE REGISTRATION SYSTEM"
+  register_now: "Register Now!"
+  c_en: "English"
+  c_ja: "日本語"
+  static_pages:
+    home:
+      title: "Home"
+  title: "Home"

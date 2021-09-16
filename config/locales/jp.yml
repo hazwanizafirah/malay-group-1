@@ -1,4 +1,17 @@
-en:
-  hello: "ハローワールド！"
-  application:
-    intro: "プロジェクト"
+jp:
+  greetings: "コース登録システムへようこそ"
+  p_1: "これはコース登録システムのホームページです"
+  home: "ホーム"
+  help: "サポート"
+  help_p1: "Frequently ask question"
+  help_p2: "Coming Soon ..."
+  log_in: "ログイン"
+  l_title: "コース登録システム"
+  h_title: "コース登録システム"
+  register_now: "今すぐ登録!"
+  c_en: "English"
+  c_ja: "日本語"
+  static_pages:
+    home:
+      title: "Home - JA"
+  title: "Home - JA"
