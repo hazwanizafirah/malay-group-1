@@ -42,3 +42,4 @@ yarn-debug.log*
 # Ignore database
 /config/database.yml
 /config/credentials.yml.enc
+/test
