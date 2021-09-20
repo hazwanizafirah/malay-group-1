@@ -22,6 +22,12 @@ en:
   the_form_contains: "The form contains"
   welcome_greet: "Congratulation!! Your registration was successful"
   user_not_found: "User not found"
+  invalid_email_password: "Sorry wrong password"
+  log_out: "Log out"
+  users: "Users"
+  account: "Account"
+  profile: "Profile"
+  settings: "Settings"
   static_pages:
     home:
       title: "Home"
