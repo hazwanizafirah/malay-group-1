@@ -34,6 +34,9 @@ jp:
   email_sent: 'Please check your email'
   email_not_found: "Email not found"
   password_reset: "Password has been reset"
+  check: "Please check your email"
+  activated: "Yey account activated"
+  invalid_acivation: "Invalid activation link"
   static_pages:
     home:
       title: "Home - JA"
