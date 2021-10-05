@@ -1,6 +1,9 @@
 /* universal */
 body {
   padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 section {
@@ -112,4 +115,16 @@ input.btn.btn-primary {
 #session_remember_me {
   margin-left: 0;
   width: auto;
+}
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+  }
 }

@@ -1,6 +1,16 @@
 class UsersController < ApplicationController
+  before_action :logged_in_user, except: [:new, :create]
+  before_action :correct_user, only: [:edit, :update]
+  before_action :admin_user, only: :destroy
+
+  def index
+    @users = User.paginate(page: params[:page])
+  end
+
   def show
-    @user = User.find_by id: params[:id]
+    @user = User.find_by(id: params[:id])
+    @register = Register.new
+    @ids = current_user.course_ids
 
     unless @user
       flash[:danger] = t(:user_not_found)
@@ -23,9 +33,25 @@ class UsersController < ApplicationController
     end
   end
 
+  def update
+    @user = User.find(params[:id])
+  end
+
+
   private
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
+  end
+
+  def correct_user
+    @user = User.find_by(id: params[:id])
+    return if current_user?(@user)
+    flash[:danger] = t("not_authorized")
+    redirect_to(home_url)
+  end
+
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
   end
 end
