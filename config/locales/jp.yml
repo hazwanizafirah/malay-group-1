@@ -24,7 +24,7 @@ jp:
   user_not_found: "ユーザーが見つかりません"
   invalid_email_password: "すみません！違います！"
   log_out: "ログアウト"
-  users: "ユーザー"
+  user: "ユーザー"
   account: "アカウント"
   profile: "プロフィール"
   settings: "設定"
@@ -41,3 +41,80 @@ jp:
     home:
       title: "Home - JA"
   title: "Home - JA"
+  course: "コース"
+
+  are_you_sure: "本当ですか？"
+
+  courses:
+    index:
+      list_course: "コースりスト"
+      new_course: "新コース"
+      date_updated: "更新日"
+      course_id: "コースID"
+      course: "コース"
+      status: "ステータス"
+      duration: "期間"
+      members: "メンバー"
+      detail: "詳しく"
+      action: "アクション"
+      remove: "削除"
+      months: "ヶ月"
+      show: "表示"
+      edit: "編集"
+      delete: "デリート"
+
+    show:
+      description: "概要"
+      status: "ステータス"
+      duration: "期間"
+      total_member: "メンバー"
+      members: "人"
+      months: "ヶ月"
+      edit: "編集"
+      delete: "デリート"
+      back_to_course: "コース一覧に戻る"
+      register_course: "コース登録"
+      add_to_course: "このコースに追加"
+      enrolled_student: "履修者数"
+      date: "日付"
+      name: "名"
+      action: "アクション"
+      remove: "削除"
+      review: "レビュー"
+
+    new:
+      new_course: "新コース"
+
+    edit:
+      edit_course: "コースの編集"
+
+    form:
+      name: "名"
+      description: "概要"
+      status: "ステータス"
+      duration: "期間"
+      cancel: "キャンセル"
+
+  registers:
+    edit:
+      permission_review: "許可レビュー"
+      user: "ユーザー"
+      subject: "科目"
+
+    course_register:
+      register_course: "コース登録"
+      enroll: "エンロール"
+
+  users:
+    show:
+      register_course: "登録コース"
+      register: "登録"
+      course_enrolled: "登録したコース"
+      date: "日付"
+      course: "コース"
+      status: "ステータス"
+      action: "アクション"
+      delete: "デリート"
+
+
+
