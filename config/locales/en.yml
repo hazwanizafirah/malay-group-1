@@ -82,19 +82,21 @@ en:
       action: "Action"
       remove: "Remove"
       review: "Review"
+      user: "User"
+      add_review: "Add a review"
 
     new:
       new_course: "New Course"
 
     edit:
       edit_course: "Edit Course"
+      cancel: "Cancel"
 
     form:
       name: "Name"
       description: "Description"
       status: "Status"
       duration: "Duration"
-      cancel: "Cancel"
 
   registers:
     edit:
@@ -115,6 +117,18 @@ en:
       course: "Course"
       status: "Status"
       action: "Action"
+      edit: "Edit"
       delete: "Delete"
+      review: "Reviews"
+      course: "Course"
 
+  reviews:
+    edit:
+      edit_review: "Edit Review"
+      cancel: "Cancel"
 
+    form:
+      user: "User"
+      review: "Review"
+      course: "Course"
+      prev_review: "Previous review"

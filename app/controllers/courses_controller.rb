@@ -6,8 +6,10 @@ class CoursesController < ApplicationController
   end
 
   def show
+    @user = User.find_by(id: params[:user_id])
     @course = Course.find_by(id: params[:id])
     @register = Register.new
+    @review = Review.new
     @ids = @course.user_ids
   end
 

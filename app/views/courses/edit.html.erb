@@ -1,5 +1,7 @@
 <%= provide :title, t(".edit_course") %>
 
-<h1><%= t(".edit_course") %></h1>
-
-<%= render "form", course: @course %>
+<div class="container">
+  <h1><%= t(".edit_course") %></h1>
+  <%= render "form", course: @course %>
+  <%= link_to t(".cancel"), @course %>
+</div>
