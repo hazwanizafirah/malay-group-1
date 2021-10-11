@@ -78,22 +78,25 @@ jp:
       enrolled_student: "履修者数"
       date: "日付"
       name: "名"
+      status: "ステータス"
       action: "アクション"
       remove: "削除"
       review: "レビュー"
+      user: "ユーザー"
+      add_review: "レビューの追加"
 
     new:
       new_course: "新コース"
 
     edit:
       edit_course: "コースの編集"
+      cancel: "キャンセル"
 
     form:
       name: "名"
       description: "概要"
       status: "ステータス"
       duration: "期間"
-      cancel: "キャンセル"
 
   registers:
     edit:
@@ -114,7 +117,18 @@ jp:
       course: "コース"
       status: "ステータス"
       action: "アクション"
+      edit: "編集"
       delete: "デリート"
+      review: "レビュー"
+      course: "コース"
 
+  reviews:
+    edit:
+      edit_review: "レビュー編集"
+      cancel: "キャンセル"
 
-
+    form:
+      user: "ユーザー"
+      review: "レビュー"
+      course: "コース"
+      prev_review: "前のレビュー"

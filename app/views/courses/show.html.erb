@@ -24,7 +24,7 @@
   </div>
 
   <div>
-    <% if current_user.admin? && !current_user?(@user) %>
+    <% if current_user.admin? %>
       <b><%= t(".add_to_course") %>: </b>
       <%= form_for @register  do |f| %>
         <%= f.hidden_field :course_id, :value => @course.id %>
@@ -44,7 +44,7 @@
               <th><%= t(".date") %></th>
               <th><%= t(".name") %></th>
               <th><%= t(".status") %></th>
-              <% if current_user.admin? && !current_user?(@user) %>
+              <% if current_user.admin? %>
                 <th><%= t(".action") %></th>
                 <th><%= t(".remove") %></th>
               <% end %>
@@ -57,7 +57,7 @@
                 <td><%= register.updated_at.to_date %></td>
                 <td><%= link_to register.user.name, register.user %></td>
                 <td><%= register.status %></td>
-                <% if current_user.admin? && !current_user?(@user) %>
+                <% if current_user.admin? %>
                   <td>
                     <%= link_to t(".review"), edit_register_path(register) %>
                   </td>
@@ -72,5 +72,32 @@
         </table>
       </div>
     </div>
+  </div>
+
+  <div>
+    <div>
+      <h2><%= t(".review") %>:</h2>
+      <% @course.reviews.each do |review| %>
+        <p>
+          <strong><%= t(".user") %>:</strong>
+          <%= review.user.name %>
+        </p>
+        <p>
+          <strong><%= t(".review") %>:</strong>
+          <%= review.content %>
+        </p>
+        <p>
+          <% if current_user.id == review.user_id %>
+            <%= link_to t(".edit"), edit_review_path(review) %>
+          <% end %>
+          <% if current_user.admin? || (current_user.id == review.user_id) %>
+            <%= link_to t(".delete"), review_path(review), class:"btn btn-mini", method: :delete, data: { confirm: t("are_you_sure") } %>
+          <% end %>
+        </p><br>
+      <% end %>
+    </div>
+
+    <h2><%= t(".add_review") %>:</h2>
+    <%= render 'reviews/form', review: @review %>
   </div>
 </div>

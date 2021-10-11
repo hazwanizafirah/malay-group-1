@@ -62,4 +62,25 @@
       </div>
     </div>
   </div>
+
+  <div>
+    <div>
+      <h2><%= t(".review") %>:</h2>
+        <% @user.reviews.each do |review| %>
+          <p>
+            <strong><%= t(".course") %>:</strong>
+            <%= link_to review.course.name, review.course %>
+          </p>
+          <p>
+            <strong><%= t(".review") %>:</strong>
+            <%= review.content %>
+          </p>
+          <p>
+            <% if current_user? @user %>
+              <%= link_to t(".edit"), edit_review_path(review) %>
+              <%= link_to t(".delete"), review_path(review), class:"btn btn-mini", method: :delete, data: { confirm: t("are_you_sure") } %>
+            <% end %>
+          </p><br>
+        <% end %>
+    </div>
 </div>

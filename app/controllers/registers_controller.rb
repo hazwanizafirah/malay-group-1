@@ -6,8 +6,8 @@ class RegistersController < ApplicationController
   end
 
   def create
-    @user = User.find_by(id: params[:id])
-    @course = Course.find_by(params[:id])
+    @user = User.find_by(id: params[:user_id])
+    @course = Course.find_by(id: params[:course_id])
     @register = Register.new(register_params)
 
     if @register.save

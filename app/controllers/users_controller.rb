@@ -9,7 +9,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
+    @course = Course.find_by(id: params[:course_id])
     @register = Register.new
+    @review = Review.new
     @ids = current_user.course_ids
 
     unless @user

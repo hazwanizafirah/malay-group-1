@@ -1,8 +1,7 @@
-<% if !current_user? @user %>
-  <b><%= t(".register_course") %>: </b>
-  <%= form_for @register do |f| %>
-    <%= f.hidden_field :user_id, :value => current_user.id %>
-    <%= f.hidden_field :course_id, :value => @course.id %>
-    <%= f.submit t(".enroll"), class: "btn btn-primary" %><br><br>
-  <% end %>
+<b><%= t(".register_course") %>: </b>
+
+<%= form_for @register do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.hidden_field :course_id, :value => @course.id %>
+  <%= f.submit t(".enroll"), class: "btn btn-primary" %><br><br>
 <% end %>

@@ -4,6 +4,7 @@ class User < ApplicationRecord
   before_create :create_activation_digest
 
   has_many :registers
+  has_many :reviews
   has_many :courses, through: :registers, dependent: :destroy
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
